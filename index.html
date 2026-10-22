@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopEasy - Online Shopping</title>
+    <!-- Connect CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Website Header -->
+    <header>
+        <h1>ShopEasy</h1>
+        <p>Your simple online shopping store</p>
+
+        <a href="#cart" class="cart-link">
+            My Cart (<span id="cart-count">0</span>)
+        </a>
+    </header>
+    <main>
+        <!-- Search and Category Filter -->
+        <section class="controls">
+            <h2>Find Your Products</h2>
+            <input type="text" id="search"
+                   placeholder="Search products...">
+
+            <select id="category">
+                <option value="All">All Categories</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Clothing">Clothing</option>
+                <option value="Accessories">Accessories</option>
+            </select>
+        </section>
+
+        <!--  Display Products -->
+        <section>
+            <h2>Our Products</h2>
+            <div id="products" class="product-grid"></div>
+        </section>
+
+        <!--  Shopping Cart -->
+        <section id="cart" class="cart-section">
+            <h2>Shopping Cart</h2>
+
+            <div id="cart-items"></div>
+
+            <h3>
+                Total: ₹<span id="cart-total">0.00</span>
+            </h3>
+
+            <button id="checkout">Place Order</button>
+        </section>
+
+    </main>
+
+    <!--  Footer -->
+    <footer>
+        <p>© 2026 ShopEasy | Mini E-Commerce Project</p>
+    </footer>
+
+    <!-- Connect JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
